@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div id="bar">
         <div id="bar2">
@@ -15,54 +17,78 @@
         </div>
     </div>
 
-    <div id="board">
-        <nav>
-            <ul>
-                <li>
-                    <img src="images/device.jpg" alt="picture of devices">
-                    <p>Choose A Page</p>
-                </li> <br> <br> <br>
-                <li>
-                    <img src="images/pic1.png" alt="homepage pic">
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <img src="images/pic2.png" alt="AddItem pic">
-                    <a href="addItem.html">Add Item</a>
-                </li>
-                <li>
-                    <img src="images/pic3.png" alt="UpdateQuantity pic">
-                    <a href="updateQuantity.html">Update Quantity</a>
-                 </li>
-                <li>
-                    <img src="images/pic5.png" alt="UpdateItem pic">
-                    <a href="updateitem.html">Update Item</a>
-                </li>
-                <li>
-                    <img src="images/pic6.png" alt="removeItem pic">
-                    <a href="removeItem.html">Remove Item</a>
-                </li>
-            </ul>
-        </nav>
-    
-        <div id="tabDiv">
-            <table id="table">
-                <thead>
-                    <tr>
-                        <th>id</th>
-                        <th>Name </th>
-                        <th>Description</th>
-                        <th>Category</th>
-                        <th>Quantity Available</th>   
-                    </tr>
-                </thead>
 
-                <tbody id ="items">
-                </tbody>
-                                
-            </table>
+    <div class="main">
+        <div id="board">
+            <nav>
+                <ul>
+                    <li>
+                        <img src="images/device.jpg" alt="picture of devices">
+                        <p>Choose A Page</p>
+                    </li> <br> <br> <br>
+                    <li>
+                        <img src="images/pic1.png" alt="homepage pic">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <img src="images/pic2.png" alt="AddItem pic">
+                        <a href="addItem.html">Add Item</a>
+                    </li>
+                    <li>
+                        <img src="images/pic5.png" alt="UpdateItem pic">
+                        <a href="updateitem.html">Update Item</a>
+                    </li>
+                    <li>
+                        <img src="images/pic6.png" alt="removeItem pic">
+                        <a href="removeItem.html">Remove Item</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainBody">
+            <div id="Stock">
+                <div class="stk">
+                    <p>Number</p> <br>
+                    <p>Total Number of Items</p>
+                </div>
+                <div class="stk">
+                    <p>Number</p> <br>
+                    <p>Items in Stock</p>
+                </div>
+                <div class="stk">
+                    <p>Number</p> <br>
+                    <p>Total Number of Categories</p>
+
+                </div>
+            </div>
+            <div id="tabDiv">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Name </th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Quantity Available</th>
+                            <th>Label</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="items">
+                    </tbody>
+
+                </table>
+            </div>
         </div>
     </div>
-<script src="js/index.js"></script>
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>

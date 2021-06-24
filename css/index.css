@@ -26,16 +26,23 @@
     margin-left: 20em;
     display: flex;
  }
+
+ .main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
  
  #board{
-     display: flex;
+     margin: 10px;
  }
 
  #board nav{
-     width: 15em;
+     width: 20em;
      border: 10px;
-     padding: 10px;
      margin: 10px;
+     box-sizing: border-box;
+     height: 100%;
  }
 
 ul {
@@ -77,15 +84,36 @@ li a:hover{
     color: blueviolet;
 }
 
+.mainBody{
+    margin: 20px;
+}
+
+#stock{
+    width: 100%;
+}
+
+.stk{
+    border: 1px solid rgb(59, 131, 91);
+    padding: 10px;
+    display: inline-block;
+    width: 32%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 #tabDiv{
     position: center;
-    margin: auto;
     margin-top: 5%;
     padding: 0;
+    width: 100%;
+}
+
+table{
+    width: 97%;
 }
 
 #table table, th, td{
-    border: 1px solid black;
+    border: 1px solid rgb(59, 131, 91);
     margin: 10px;
     padding: 20px;
     background-color: white;
@@ -94,3 +122,4 @@ li a:hover{
 #table table th{
     padding-left: 5rem;
 }
+

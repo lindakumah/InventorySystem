@@ -10,8 +10,28 @@
 <body>
     <div id="myDiv"> 
         <a href="index.html"> HOME</a>
-        <a href="addItem.html"> ADD ITEM</a> 
-        <a href="updateQuantity.html"> UPDATE QUANTITY</a> 
+        <a href="addItem.html"> ADD ITEM</a>  
         <a href="updateitem.html"> UPDATE ITEM </a>
         <a href="removeItem.html"> REMOVE ITEM</a>
     </div>
+
+    <div class="container">
+        <h1 id="head">Delete AN ITEM</h1>
+        <hr>
+        <div class="boxdiv">
+            <label>Select Item Name</label> <br>
+            <select class="name" id="names"> 
+                <option></option>
+            </select><br><br>
+            <label>Name of Item</label> <br>
+            <input type="text" id="name" class="name" placeholder="Name"> <br><br>
+            <label>Description</label> <br>
+            <input type="text" id="description" class = "description" placeholder="Description"> <br><br>
+            <label>Category</label> <br>
+            <input type="text" class="category" id="category" placeholder="Category"> <br><br>
+            <label>Quantity</label> <br>
+            <input type="text" id="quantity" class="quantity" placeholder="Quantity"> <br><br>
+            <button id="deleteBtn" class="btn">Delete Item</button><br><br>
+        </div>
+      
+   </div>
