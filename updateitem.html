@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/updateItem.css">
+</head>
+<body>
+    <div id="myDiv"> 
+        <a href="index.html"> HOME</a>
+        <a href="addItem.html"> ADD ITEM</a> 
+        <a href="updateQuantity.html"> UPDATE QUANTITY</a> 
+        <a href="updateitem.html"> UPDATE ITEM </a>
+        <a href="removeItem.html"> REMOVE ITEM</a>
+    </div>
+  
+    <div class="container">
+        <h1 id="head">UPDATE AN ITEM</h1>
+        <hr>
+        <div class="boxdiv">
+            <label>Name of Item</label> <br>
+            <select class="name" id="names"> 
+                <option></option>
+            </select><br><br>
+            <input type="text" id="name" class="name" placeholder="Name"> <br><br>
+            <label>Description</label> <br>
+            <input type="text" id="description" class = "description" placeholder="Description"> <br><br>
+            <label>Category</label> <br>
+            <input type="text" class="category" id="category" placeholder="Category"> <br><br>
+            <label>Quantity</label> <br>
+            <input type="text" id="quantity" class="quantity" placeholder="Quantity"> <br><br>
+            <button id="updateBtn" class="btn">Update Item</button><br><br>
+        </div>
+      
+   </div>
+<script src = "js/updateItem.js"></script>
+
+</body>
+</html>

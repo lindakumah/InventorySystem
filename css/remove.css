@@ -1,0 +1,19 @@
+#myDiv {
+    padding: 10px;
+    border: 10px;
+    background-color: whitesmoke;
+    text-align: right;
+    height: 50px;
+    color: white;
+    }
+
+#myDiv a{
+    color:rgb(59, 131, 91);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+    
+#myDiv a:hover{
+    background-color: white;
+}
