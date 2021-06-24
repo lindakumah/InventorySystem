@@ -19,9 +19,11 @@ addItem.addEventListener("click", ()=> {
             const localItem = JSON.parse(localStorage.getItem("items"));
             localItem.push(item);
             localStorage.setItem("items", JSON.stringify(localItem));
+            alert("Added Successfully");
         }
         else{
             let itemArray = [item];
             localStorage.setItem("items", JSON.stringify(itemArray));
+            alert("Added Successfully");
         }
 });
