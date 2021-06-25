@@ -15,6 +15,39 @@ const countItems = () => {
 
 countItems();
 
+let quantityCount = () => {
+    let localStorageItems = JSON.parse(localStorage.getItem("items"));
+    let countNumber = 0;
+
+    for(let item of localStorageItems){
+        countNumber += parseInt(item.quantity);
+    }
+    return countNumber;
+}
+
+let updateSummary = () => {
+    document.getElementById("qty").innerText = quantityCount();
+}
+
+let getCategoryFromStorage = () =>{
+    return localStorage.getItem("items")
+    ? JSON.parse(localStorage.getItem("items"))
+    : [];
+}
+
+let categoryCount = () => {
+    let countCategories = [];
+    let storeData = getCategoryFromStorage();
+    for(let item of storeData){
+        if(!countCategories.includes(item.category)){
+            countCategories.push(item.category);
+        }
+    }
+
+    return countCategories;
+}
+document.getElementById("cat").innerText = categoryCount().length;
+
 let renderItem = () => {
     let localStorageItems = JSON.parse(localStorage.getItem("items"));
     if(localStorageItems){
@@ -43,3 +76,4 @@ let renderItem = () => {
 
 
 renderItem();
+updateSummary();
