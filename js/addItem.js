@@ -4,10 +4,15 @@ let category = document.getElementById("category");
 let quantity = document.getElementById("quantity");
 let addItem = document.getElementById("addItem");
 
-
+let checksInput = () =>{
+    if (itemName.value == "" && quantity.value == "" || description.value == "" || category.value == ""){
+        
+    }
+}
 
 addItem.addEventListener("click", ()=> {
-
+   let checked =  checksInput();
+if (!checked){
     item = {
         itemName: itemName.value,
         description: description.value,
@@ -19,11 +24,16 @@ addItem.addEventListener("click", ()=> {
             const localItem = JSON.parse(localStorage.getItem("items"));
             localItem.push(item);
             localStorage.setItem("items", JSON.stringify(localItem));
-            alert("Added Successfully");
+            alert("Item has been added Successfully");
         }
         else{
             let itemArray = [item];
             localStorage.setItem("items", JSON.stringify(itemArray));
-            alert("Added Successfully");
+            alert("Item has been added Successfully");
         }
+   
+}else{
+    alert("Please enter a valid input");
+}
+        
 });

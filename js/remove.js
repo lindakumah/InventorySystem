@@ -3,7 +3,7 @@ let itemName = document.getElementById("name");
 let description = document.getElementById("description");
 let category = document.getElementById("category");
 let quantity = document.getElementById("quantity");
-let updateBtn = document.getElementById("updateBtn");
+let deleteBtn = document.getElementById("deleteBtn");
 let selectNames = document.getElementById("names");
 
 if(localStorageItems){
@@ -29,10 +29,16 @@ const updateForm = (selectedItemIndex) =>{
 }
 
 const deleteItem = (itemIndex) => {
-    let localStorageItems = JSON.parse(localStorage.getItem(items));
+    let localStorageItems = JSON.parse(localStorage.getItem("items"));
     localStorageItems = localStorageItems.filter((item, index) =>{
         return itemIndex != index ;
     })
     localStorage.setItem("items", JSON.stringify(localStorageItems));
-    renderItem();
+    
 }
+
+deleteBtn.addEventListener("click", () =>{
+    deleteItem(selectNames.value);
+    alert("Successfully deleted")
+    window.location.href = "./index.html";
+})
